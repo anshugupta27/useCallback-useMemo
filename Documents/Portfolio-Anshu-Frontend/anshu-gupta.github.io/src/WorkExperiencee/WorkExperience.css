@@ -1,0 +1,48 @@
+/* 🔹 Makes sure the whole page scrolls naturally */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* 🔹 Ensures layout fills the full page */
+.work-experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top:90px;
+}
+
+/* 🔹 Grid layout for cards - Ensures 3 per row */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+/* 🔹 Styling for each card */
+.work-card {
+    max-width: 25rem;
+    background: #ede3ed;
+    margin: 10px;
+}
+
+/* 🔹 Centering the company logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* 🔹 Logo styling */
+.company-logo {
+    height: 100px;
+    width: auto;
+}
